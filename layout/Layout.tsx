@@ -12,8 +12,9 @@ export default function Layout(props: LayoutProps) {
   return (
     <Container maxW="8xl">
       <NavBar />
-      <main style={{ height: "1000px", marginTop: "80px" }}>{children}</main>
-      <Footer />
+      <main>{children}</main>
+      {/* TODO: add footer in? */}
+      {/* <Footer /> */}
     </Container>
   );
 }

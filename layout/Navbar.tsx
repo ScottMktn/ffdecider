@@ -34,13 +34,9 @@ export default function NavBar() {
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        position="fixed"
-        top={0}
-        width="100%"
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
-        pr={{ base: 10 }}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
@@ -279,10 +275,10 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Fantasy Decider",
-    href: "#",
+    href: "/decider",
   },
   {
     label: "My Team",
-    href: "#",
+    href: "/team",
   },
 ];
