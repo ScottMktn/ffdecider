@@ -18,8 +18,14 @@ const UnfinishedPage = () => {
         <Text fontSize="xl">
           Thank you for your patience while our team gets this up and running
         </Text>
-        <Link href="/">
-          <Button as="button" size="lg" colorScheme="blue" mt="64px">
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <Button
+            size="lg"
+            color="white"
+            bg="blue.500"
+            mt="64px"
+            _hover={{ bg: "blue.300" }}
+          >
             Back to Home page
           </Button>
         </Link>
