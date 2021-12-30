@@ -13,7 +13,6 @@ export default function Layout(props: LayoutProps) {
     <Container maxW="8xl">
       <NavBar />
       <main>{children}</main>
-      {/* TODO: add footer in? */}
       {/* <Footer /> */}
     </Container>
   );
