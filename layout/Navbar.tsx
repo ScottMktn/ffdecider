@@ -281,4 +281,12 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "My Team",
     href: "/team",
   },
+  {
+    label: "Login",
+    href: "/api/auth/login",
+  },
+  {
+    label: "Logout",
+    href: "/api/auth/logout",
+  },
 ];

@@ -2,6 +2,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import React from "react";
 import Layout from "../layout/Layout";
 import { AppProps } from "next/app";
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 const colors = {
   brand: {
@@ -15,11 +16,13 @@ const theme = extendTheme({ colors });
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ChakraProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ChakraProvider>
+    <UserProvider>
+      <ChakraProvider theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
+    </UserProvider>
   );
 }
 
